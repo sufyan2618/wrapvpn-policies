@@ -81,7 +81,7 @@
             text-align: justify;
         }
         
-        ul {
+        ul, ol {
             padding-left: 20px;
             margin-bottom: 15px;
         }
@@ -102,16 +102,16 @@
             margin: 20px 0;
         }
         
-        .contact-section {
+        .email-box {
             background: #121A2E;
             color: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 10px;
-            margin: 30px 0;
+            margin: 25px 0;
             text-align: center;
         }
         
-        .contact-section h3 {
+        .email-box h3 {
             color: #00BCD4;
             margin-bottom: 15px;
         }
@@ -132,11 +132,13 @@
             background: #0891b2;
         }
         
-        .btn-danger {
+        .btn-email {
             background: #ef4444;
+            font-size: 1.1em;
+            padding: 15px 30px;
         }
         
-        .btn-danger:hover {
+        .btn-email:hover {
             background: #dc2626;
         }
         
@@ -159,6 +161,13 @@
             justify-content: center;
             margin-right: 10px;
             font-weight: bold;
+        }
+        
+        .process-steps {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
         }
         
         @media (max-width: 768px) {
@@ -187,7 +196,7 @@
         
         <div class="highlight-box">
             <h3>🔒 Your Data, Your Control</h3>
-            <p>At Wrap VPN, we believe you should have complete control over your personal data. This policy explains how you can request deletion of your account and associated data from our services.</p>
+            <p>At Wrap VPN, we believe you should have complete control over your personal data. This policy explains how you can request deletion of your account and associated data from our services through our secure email verification process.</p>
         </div>
         
         <h2>📋 What Data We Collect</h2>
@@ -199,32 +208,30 @@
             <li><strong>Payment Information:</strong> Subscription status and payment history (processed by third-party providers)</li>
         </ul>
         
-        <h2>🗑️ How to Delete Your Account</h2>
-        <p>You can delete your account and all associated data through multiple methods:</p>
+        <h2>📧 How to Request Account Deletion</h2>
+        <p>For security reasons, account deletion requests must be submitted via email to verify your identity. We do not allow instant account deletion to protect against unauthorized access.</p>
         
-        <h3><span class="step-number">1</span>Through the Mobile App</h3>
-        <ul>
-            <li>Open the Wrap VPN app</li>
-            <li>Go to <strong>Profile</strong> → <strong>Settings</strong></li>
-            <li>Select <strong>"Delete my account"</strong></li>
-            <li>Follow the confirmation steps</li>
-            <li>Your account will be permanently deleted within 24 hours</li>
-        </ul>
+        <div class="email-box">
+            <h3>📬 Send Deletion Request</h3>
+            <p>Click the button below to send us an account deletion request:</p>
+            <a href="mailto:support@wrapvpn.com?subject=Account%20Deletion%20Request&body=Hello%20Wrap%20VPN%20Support%20Team%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20account%20and%20all%20associated%20data.%0A%0AAccount%20Details%3A%0A-%20Email%3A%20%5BYour%20registered%20email%5D%0A-%20Username%3A%20%5BYour%20username%5D%0A-%20Request%20Date%3A%20%5BToday%27s%20date%5D%0A%0APlease%20confirm%20the%20deletion%20of%20my%20account%20and%20all%20personal%20data%20associated%20with%20it.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D" class="btn btn-email">📧 Send Deletion Request</a>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                Email: <strong>support@wrapvpn.com</strong><br>
+                Subject: <strong>Account Deletion Request</strong>
+            </p>
+        </div>
         
-        <h3><span class="step-number">2</span>Email Request</h3>
-        <ul>
-            <li>Send an email to <strong>sufyanliaquat70@gmail.com</strong></li>
-            <li>Include your registered email address</li>
-            <li>Subject: "Account Deletion Request"</li>
-            <li>We'll process your request within 48 hours</li>
-        </ul>
-        
-        <h3><span class="step-number">3</span>Contact Form</h3>
-        <ul>
-            <li>Fill out our <a href="#contact" class="btn">Contact Form</a></li>
-            <li>Select "Account Deletion" as the reason</li>
-            <li>Provide your account details</li>
-        </ul>
+        <h2>🔄 Deletion Process</h2>
+        <div class="process-steps">
+            <h3>Step-by-Step Process:</h3>
+            <ol>
+                <li><strong>Submit Request:</strong> Send email using the button above or manually to support@wrapvpn.com</li>
+                <li><strong>Identity Verification:</strong> We verify the request comes from the account owner (24 hours)</li>
+                <li><strong>Final Confirmation:</strong> We send a final confirmation email before deletion</li>
+                <li><strong>Account Deletion:</strong> Your account and data are permanently deleted (48 hours)</li>
+                <li><strong>Completion Notice:</strong> You receive confirmation that deletion is complete</li>
+            </ol>
+        </div>
         
         <div class="warning-box">
             <h3>⚠️ Important Notice</h3>
@@ -233,16 +240,27 @@
                 <li>Your premium subscription (no refunds for unused time)</li>
                 <li>Connection history and preferences</li>
                 <li>All account data and settings</li>
+                <li>The ability to recover your account</li>
             </ul>
         </div>
         
         <h2>⏱️ Data Deletion Timeline</h2>
-        <p>Upon receiving your deletion request:</p>
+        <p>Upon receiving and verifying your deletion request:</p>
         <ul>
-            <li><strong>Immediate:</strong> Account access is disabled</li>
-            <li><strong>Within 24 hours:</strong> Account data is removed from active systems</li>
+            <li><strong>Within 24 hours:</strong> Identity verification and final confirmation email</li>
+            <li><strong>Within 48 hours:</strong> Account access is disabled and data removal begins</li>
+            <li><strong>Within 7 days:</strong> All account data is removed from active systems</li>
             <li><strong>Within 30 days:</strong> All data is permanently deleted from backups</li>
             <li><strong>Within 90 days:</strong> Data is removed from all third-party services</li>
+        </ul>
+        
+        <h2>📝 Required Information</h2>
+        <p>To process your deletion request, please include:</p>
+        <ul>
+            <li><strong>Registered Email:</strong> The email address associated with your account</li>
+            <li><strong>Username:</strong> Your Wrap VPN username (if applicable)</li>
+            <li><strong>Account Details:</strong> Any additional information to help us identify your account</li>
+            <li><strong>Reason (Optional):</strong> Help us improve by sharing why you're leaving</li>
         </ul>
         
         <h2>🔄 Data Retention Exceptions</h2>
@@ -251,6 +269,7 @@
             <li><strong>Legal Requirements:</strong> Data required by law (up to 7 years)</li>
             <li><strong>Security Logs:</strong> Anonymized security data (up to 1 year)</li>
             <li><strong>Financial Records:</strong> Payment history for tax purposes (up to 7 years)</li>
+            <li><strong>Fraud Prevention:</strong> Anonymized data to prevent future fraud</li>
         </ul>
         
         <h2>🌍 Third-Party Data</h2>
@@ -259,30 +278,41 @@
             <li><strong>Payment Processors:</strong> Stripe, Google Play, Apple App Store</li>
             <li><strong>Analytics Services:</strong> Google Analytics, Firebase</li>
             <li><strong>Cloud Services:</strong> Supabase, AWS</li>
+            <li><strong>Support Systems:</strong> Customer service platforms</li>
         </ul>
         
         <div class="highlight-box">
-            <h3>📧 Confirmation Process</h3>
-            <p>After submitting a deletion request, you'll receive:</p>
-            <ol>
-                <li>Immediate confirmation email</li>
-                <li>Final warning email (24 hours before deletion)</li>
-                <li>Deletion completion confirmation</li>
-            </ol>
+            <h3>📧 Email Template</h3>
+            <p>If you prefer to write your own email, use this template:</p>
+            <hr style="margin: 15px 0;">
+            <p><strong>To:</strong> support@wrapvpn.com<br>
+            <strong>Subject:</strong> Account Deletion Request</p>
+            <p style="font-style: italic; background: #f9f9f9; padding: 15px; border-radius: 5px;">
+                Hello Wrap VPN Support Team,<br><br>
+                I would like to request the deletion of my account and all associated data.<br><br>
+                Account Details:<br>
+                - Email: [Your registered email]<br>
+                - Username: [Your username]<br>
+                - Request Date: [Today's date]<br><br>
+                Please confirm the deletion of my account and all personal data associated with it.<br><br>
+                Thank you,<br>
+                [Your Name]
+            </p>
         </div>
         
         <h2>🔄 Alternative Options</h2>
         <p>Before deleting your account, consider these alternatives:</p>
         <ul>
-            <li><strong>Data Export:</strong> Download your data before deletion</li>
-            <li><strong>Account Suspension:</strong> Temporarily disable your account</li>
+            <li><strong>Data Export:</strong> Request a copy of your data before deletion</li>
+            <li><strong>Account Suspension:</strong> Temporarily disable your account instead</li>
             <li><strong>Privacy Settings:</strong> Adjust data collection preferences</li>
+            <li><strong>Support Help:</strong> Contact us to resolve any issues</li>
         </ul>
         
-        <div class="contact-section" id="contact">
+        <div class="email-box">
             <h3>📞 Need Help?</h3>
             <p>If you have questions about data deletion or need assistance:</p>
-            <a href="mailto:support@wrapvpn.com?subject=Data%20Deletion%20Inquiry" class="btn">Email Support</a>
+            <a href="mailto:support@wrapvpn.com?subject=Data%20Deletion%20Inquiry" class="btn">General Support</a>
             <a href="mailto:privacy@wrapvpn.com?subject=Privacy%20Inquiry" class="btn">Privacy Team</a>
             <p style="margin-top: 15px;">
                 <strong>Response Time:</strong> Within 24 hours<br>
@@ -295,7 +325,8 @@
         <ul>
             <li><strong>GDPR Compliance:</strong> Right to erasure under Article 17</li>
             <li><strong>CCPA Compliance:</strong> Right to delete personal information</li>
-            <li><strong>Privacy Policy:</strong> <a href="privacy_policy.html">View Full Privacy Policy</a></li>
+            <li><strong>Privacy Policy:</strong> <a href="privacy-policy.html">View Full Privacy Policy</a></li>
+            <li><strong>Terms of Service:</strong> <a href="terms-of-service.html">View Terms</a></li>
         </ul>
         
         <div class="footer">
@@ -306,3 +337,4 @@
     </div>
 </body>
 </html>
+
